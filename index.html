@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniVerse | Community & Tracking Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- BOOT SEQUENCE -->
+    <div id="system-boot">
+        <div class="boot-text">
+            <span>WARNING: UNAUTHORIZED ACCESS DETECTED</span>
+            <span class="glitch-text" data-text="INITIATING CYBER-DIVE SEQUENCE...">INITIATING CYBER-DIVE SEQUENCE...</span>
+            <span>LOADING NERV KERNEL v3.0.9...</span>
+            <span>SYNCHRONIZATION RATE: 400%</span>
+            <span class="success-text">SYSTEM OVERRIDE SUCCESSFUL.</span>
+        </div>
+    </div>
+
+    <!-- Intro Scroll Animation -->
+    <div class="scroll-intro-container" id="introContainer">
+        <div class="sticky-canvas-wrapper">
+            <canvas id="scrollCanvas"></canvas>
+            <div class="scroll-indicator" id="introIndicator">
+                ↓ Scroll to Enter AniVerse ↓
+            </div>
+            <div class="intro-fade-overlay" id="introFade"></div>
+        </div>
+    </div>
+
+    <div id="aniverse-content" class="hidden">
+        
+        <!-- Epic Manga Backgrounds -->
+        <div class="manga-bg manga-left"></div>
+        <div class="manga-bg manga-right"></div>
+        
+        <!-- Background Effects for Density -->
+        <div class="bg-effects">
+            <div class="giant-orb orb-pink"></div>
+            <div class="giant-orb orb-cyan"></div>
+            <div class="giant-orb orb-blue"></div>
+            <div class="floating-rune r1">アニバース</div>
+            <div class="floating-rune r2">データ</div>
+            <div class="floating-rune r3">01</div>
+        </div>
+
+        <!-- Navbar (White) -->
+        <nav class="navbar-white">
+            <div class="nav-brand">
+                <span class="logo-icon">✦</span> AniVerse
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Discover</a>
+                <a href="#">Standings</a>
+                <a href="#">Oracle</a>
+                <a href="#">Vault</a>
+                <a href="#">Create</a>
+                <a href="#">Store</a>
+            </div>
+            <div class="nav-actions">
+                <div class="search-pill">
+                    <span class="search-icon">⌕</span>
+                    <input type="text" placeholder="Search anime, characters, anything...">
+                </div>
+                <div class="action-icons">
+                    <span class="icon">✉</span>
+                    <span class="icon bell">🔔<span class="badge"></span></span>
+                </div>
+                <div class="user-profile-nav">
+                    <img src="assets/sasuke_uchiha.jpg" alt="Avatar" class="nav-avatar">
+                    <div class="nav-user-text">
+                        <b>Otaku_Soul</b>
+                        <span>Level 20</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="dashboard-container">
+            
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <!-- Background Image Integration -->
+                <div class="hero-bg" style="background-image: url('http://googleusercontent.com/image_generation_content/198');"></div>
+                
+                <div class="hero-left">
+                    <h1 class="hero-title">DISCOVER<br>YOUR ANIME<br><span class="text-gradient">IDENTITY</span></h1>
+                    <p class="hero-subtitle">Dive into millions of stories, countless worlds,<br>and find the anime that defines you.</p>
+                    
+                    <div class="hero-cta-group">
+                        <button class="btn-hot-pink">Start Your Journey</button>
+                        <button class="btn-play">▶ <span>Watch Intro</span></button>
+                    </div>
+
+                    <div class="trending-row">
+                        <span class="trending-label">TRENDING CHARACTERS</span>
+                        <div class="trending-avatars">
+                            <div class="t-avatar"><img src="assets/satoru_gojo.jpg"></div>
+                            <div class="t-avatar"><img src="assets/real_sukuna.jpg.jpeg"></div>
+                            <div class="t-avatar"><img src="assets/levi_ackerman.jpg"></div>
+                            <div class="t-avatar"><img src="assets/roronoa_zoro.jpg"></div>
+                            <div class="t-avatar"><img src="assets/mikasa_ackerman.jpg"></div>
+                            <div class="t-avatar"><img src="assets/nami.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="fan-wars-widget glass-card">
+                        <div class="widget-header">
+                            <span class="neon-dot"></span> LIVE FAN WARS
+                        </div>
+                        <div class="vs-layout">
+                            <div class="fighter p1">
+                                <img src="assets/satoru_gojo.jpg" class="f-avatar">
+                                <span>Gojo Satoru</span>
+                            </div>
+                            <div class="vs-text">VS</div>
+                            <div class="fighter p2">
+                                <img src="assets/real_sukuna.jpg.jpeg" class="f-avatar">
+                                <span>Sukuna</span>
+                            </div>
+                        </div>
+                        <div class="voting-bars">
+                            <div class="vote-bar blue-glow" style="width: 68%;">68%</div>
+                            <div class="vote-bar orange-glow" style="width: 32%;">32%</div>
+                        </div>
+                        <p class="vote-count">124,850 votes • Ends in 02:15:36</p>
+                        <button class="btn-outline-neon full-width">Join Battle</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Ribbon -->
+            <section class="stats-ribbon">
+                <div class="stat"><span class="icon">👤</span> <b>3.2M+</b> Active Otakus</div>
+                <div class="stat"><span class="icon">📺</span> <b>12.5M+</b> Anime Entries</div>
+                <div class="stat"><span class="icon">👥</span> <b>8.7M+</b> Characters</div>
+                <div class="stat"><span class="icon">🧠</span> <b>2.1M+</b> Fan Theories</div>
+                <div class="stat"><span class="icon">💬</span> <b>4.9M+</b> Community Posts</div>
+            </section>
+
+            <!-- STAGGERED SHOWCASE LAYOUT -->
+            <div class="staggered-showcase">
+
+                <!-- THE CORE: 3D Galaxy (Center) -->
+                <div class="widget glass-card dna-galaxy align-center z-3">
+                    <div class="widget-title">ANIME DNA CORE <span class="badge">3D</span></div>
+                    <div class="galaxy-map">
+                        <div class="solar-system">
+                            <div class="orbit ring-1"></div>
+                            <div class="orbit ring-2"></div>
+                            <div class="orbit ring-3"></div>
+                            <div class="center-crystal">
+                                <div class="core-layer c-inner"></div>
+                                <div class="core-layer c-outer"></div>
+                            </div>
+                            <div class="node n-action"><div class="planet p-pink"></div><span class="p-label">Action<br><small>32%</small></span></div>
+                            <div class="node n-psych"><div class="planet p-blue"></div><span class="p-label">Psychological<br><small>21%</small></span></div>
+                            <div class="node n-romance"><div class="planet p-orange"></div><span class="p-label">Romance<br><small>15%</small></span></div>
+                            <div class="node n-adv"><div class="planet p-cyan"></div><span class="p-label">Adventure<br><small>41%</small></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ORBITAL WIDGET 1 (Left) -->
+                <div class="widget glass-card ai-oracle align-left overlap-up z-4">
+                    <div class="widget-title">AI RECOMMENDATION ORACLE<br><small>Your personal anime genie</small></div>
+                    <div class="oracle-chat">
+                        <div class="user-bubble">Like Death Note but emotional</div>
+                        <div class="oracle-response">
+                            <div class="cards-3">
+                                <div class="card" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/monster_poster.jpg'); background-size: cover; background-position: center; border-color: var(--neon-pink); text-shadow: 0 1px 3px black;">Monster</div>
+                                <div class="card" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/code_geass_poster.jpg'); background-size: cover; background-position: center; border-color: var(--neon-pink); text-shadow: 0 1px 3px black;">Code Geass</div>
+                                <div class="card" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/steinsgate_poster.jpg'); background-size: cover; background-position: center; border-color: var(--neon-pink); text-shadow: 0 1px 3px black;">Steins;Gate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ORBITAL WIDGET 2 (Right) -->
+                <div class="widget glass-card arena align-right overlap-up-more z-2">
+                    <div class="widget-title flex-between">LIVE ARENA <a href="#">></a></div>
+                    <div class="arena-split">
+                        <div class="arena-fighter f-left">
+                            <div class="content-unskew">
+                                <img src="assets/demon_slayer_poster.jpg">
+                                <div class="info">Tanjiro Kamado<br><small>Demon Slayer</small></div>
+                                <div class="percent">72%</div>
+                            </div>
+                        </div>
+                        <div class="arena-vs">VS</div>
+                        <div class="arena-fighter f-right">
+                            <div class="content-unskew">
+                                <img src="assets/roronoa_zoro.jpg">
+                                <div class="info">Zoro Roronoa<br><small>One Piece</small></div>
+                                <div class="percent">28%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ORBITAL WIDGET 5 (Left) -->
+                <div class="widget glass-card watchlist align-left overlap-up z-5">
+                    <div class="widget-title flex-between">WATCHLIST</div>
+                    <div class="carousel">
+                        <div class="poster-card">
+                            <div class="poster-img" style="background-image: url('assets/vinland_saga_poster.jpg'); background-size: cover; background-position: center;"></div>
+                            <b>Vinland Saga</b>
+                            <div class="prog-bar"><div class="fill" style="width:80%;"></div></div>
+                        </div>
+                        <div class="poster-card">
+                            <div class="poster-img" style="background-image: url('assets/86_eighty_six_poster.jpg'); background-size: cover; background-position: center;"></div>
+                            <b>86 Eighty Six</b>
+                            <div class="prog-bar"><div class="fill" style="width:40%;"></div></div>
+                        </div>
+                        <div class="poster-card">
+                            <div class="poster-img" style="background-image: url('assets/chainsaw_man_poster.jpg'); background-size: cover; background-position: center;"></div>
+                            <b>Chainsaw Man</b>
+                            <div class="prog-bar"><div class="fill" style="width:0%;"></div></div>
+                        </div>
+                        <div class="poster-card">
+                            <div class="poster-img" style="background-image: url('assets/demon_slayer_poster.jpg'); background-size: cover; background-position: center;"></div>
+                            <b>Demon Slayer</b>
+                            <div class="prog-bar"><div class="fill" style="width:65%;"></div></div>
+                        </div>
+                        <div class="poster-card">
+                            <div class="poster-img" style="background-image: url('assets/mushoku_tensei_poster.jpg'); background-size: cover; background-position: center;"></div>
+                            <b>Mushoku Tensei</b>
+                            <div class="prog-bar"><div class="fill" style="width:90%;"></div></div>
+                        </div>
+                        <div class="poster-card">
+                            <div class="poster-img" style="background-image: url('assets/code_geass_poster.jpg'); background-size: cover; background-position: center;"></div>
+                            <b>Code Geass</b>
+                            <div class="prog-bar"><div class="fill" style="width:20%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ORBITAL WIDGET 3 (Right) -->
+                <div class="widget glass-card tracker align-right overlap-up z-3">
+                    <div class="widget-title flex-between">TRACKER <select class="cyber-select"><option>This Month</option></select></div>
+                    <div class="tracker-layout">
+                        <!-- Holographic Radar Gauge -->
+                        <div class="holo-gauge-container">
+                            <div class="radar-spin"></div>
+                            <div class="completion-gauge">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="bg" d="M18 2a16 16 0 1 1 0 32a16 16 0 1 1 0-32"/>
+                                    <path class="fill" stroke-dasharray="75, 100" d="M18 2a16 16 0 1 1 0 32a16 16 0 1 1 0-32"/>
+                                </svg>
+                                <svg viewBox="0 0 36 36" class="circular-chart inner-chart">
+                                    <path class="fill-pink" stroke-dasharray="40, 100" d="M18 2a16 16 0 1 1 0 32a16 16 0 1 1 0-32"/>
+                                </svg>
+                                <div class="gauge-text">75%<br><small>Sync Rate</small></div>
+                            </div>
+                        </div>
+
+                        <!-- Cyber Node Stats -->
+                        <div class="tracker-stats">
+                            <div class="cyber-stat-list">
+                                <div class="stat-node border-pink">
+                                    <div class="node-icon">▶</div>
+                                    <div class="node-info">
+                                        <small>Watching</small>
+                                        <div class="node-bar"><div class="fill-bar" style="width: 70%; background: var(--neon-pink);"></div></div>
+                                    </div>
+                                    <b class="pink-txt">18</b>
+                                </div>
+                                <div class="stat-node border-cyan">
+                                    <div class="node-icon">✓</div>
+                                    <div class="node-info">
+                                        <small>Completed</small>
+                                        <div class="node-bar"><div class="fill-bar" style="width: 20%; background: var(--neon-cyan);"></div></div>
+                                    </div>
+                                    <b class="cyan-txt">4</b>
+                                </div>
+                                <div class="stat-node border-blue">
+                                    <div class="node-icon">⏸</div>
+                                    <div class="node-info">
+                                        <small>On Hold</small>
+                                        <div class="node-bar"><div class="fill-bar" style="width: 10%; background: var(--neon-blue);"></div></div>
+                                    </div>
+                                    <b class="blue-txt">2</b>
+                                </div>
+                                <div class="stat-node border-orange">
+                                    <div class="node-icon">★</div>
+                                    <div class="node-info">
+                                        <small>Plan to Watch</small>
+                                        <div class="node-bar"><div class="fill-bar" style="width: 40%; background: var(--neon-orange);"></div></div>
+                                    </div>
+                                    <b class="orange-txt">7</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THEORY LAB (Full Width) -->
+                <div class="widget glass-card theory-lab-full z-6" style="column-span: all; display: flex; width: 100%; margin: 40px 0; padding: 0; overflow: hidden; height: 400px; position: relative;">
+                    
+                    <!-- Left Character -->
+                    <div style="width: 25%; position: relative; background: linear-gradient(90deg, rgba(30,10,60,0.8), transparent);">
+                        <img src="assets/avatar_killua.png" style="position: absolute; bottom: 0; left: -40px; height: 110%; object-fit: contain; filter: drop-shadow(10px 0 20px rgba(0,0,0,0.8));">
+                    </div>
+
+                    <!-- Middle: Theory List -->
+                    <div style="width: 35%; padding: 30px 40px; display: flex; flex-direction: column; justify-content: center; z-index: 2;">
+                        <h3 style="color: var(--neon-pink); font-family: 'Outfit'; font-size: 1.8rem; margin-bottom: 5px; letter-spacing: 1px;">THEORY LAB</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 20px;">Explore the deepest conspiracies</p>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="display: flex; gap: 15px; align-items: center; background: rgba(0,0,0,0.5); padding: 12px 15px; border-radius: 12px; border-left: 3px solid var(--neon-cyan); transition: 0.2s; cursor: pointer;" onmouseover="this.style.background='rgba(0,255,255,0.1)'" onmouseout="this.style.background='rgba(0,0,0,0.5)'">
+                                <img src="assets/satoru_gojo.jpg" style="width: 40px; height: 40px; border-radius: 8px; object-fit: cover;">
+                                <div>
+                                    <div style="font-weight: 700; font-size: 0.9rem;">Is Gojo really back?</div>
+                                    <small style="color: var(--neon-cyan);">2.5K 💬 &nbsp; 120 🔁</small>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 15px; align-items: center; background: rgba(0,0,0,0.5); padding: 12px 15px; border-radius: 12px; border-left: 3px solid var(--neon-pink); transition: 0.2s; cursor: pointer;" onmouseover="this.style.background='rgba(255,42,133,0.1)'" onmouseout="this.style.background='rgba(0,0,0,0.5)'">
+                                <img src="assets/itachi_uchiha.jpg" style="width: 40px; height: 40px; border-radius: 8px; object-fit: cover;">
+                                <div>
+                                    <div style="font-weight: 700; font-size: 0.9rem;">The secret history of Uchiha</div>
+                                    <small style="color: var(--neon-pink);">1.8K 💬 &nbsp; 80 🔁</small>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 15px; align-items: center; background: rgba(0,0,0,0.5); padding: 12px 15px; border-radius: 12px; border-left: 3px solid var(--neon-orange); transition: 0.2s; cursor: pointer;" onmouseover="this.style.background='rgba(255,140,0,0.1)'" onmouseout="this.style.background='rgba(0,0,0,0.5)'">
+                                <img src="assets/avatar_goku.png" style="width: 40px; height: 40px; border-radius: 8px; object-fit: cover;">
+                                <div>
+                                    <div style="font-weight: 700; font-size: 0.9rem;">Is the 8th Dragon Ball possible?</div>
+                                    <small style="color: var(--neon-orange);">3.1K 💬 &nbsp; 250 🔁</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button style="margin-top: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 12px; border-radius: 8px; color: white; font-weight: 700; cursor: pointer; transition: 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'">View All Theories</button>
+                    </div>
+
+                    <!-- Right: Complex Corkboard -->
+                    <div style="width: 40%; position: relative; background: radial-gradient(circle at center, rgba(30,20,40,0.8) 0%, rgba(10,5,15,1) 100%); border-left: 1px solid rgba(255,255,255,0.1); overflow: hidden; box-shadow: inset 20px 0 30px rgba(0,0,0,0.5);" class="corkboard-complex">
+                        
+                        <!-- Red Strings -->
+                        <div class="red-string" style="width: 250px; top: 150px; left: 80px; transform: rotate(25deg);"></div>
+                        <div class="red-string" style="width: 180px; top: 100px; left: 220px; transform: rotate(-45deg);"></div>
+                        <div class="red-string" style="width: 300px; top: 200px; left: 120px; transform: rotate(-10deg);"></div>
+                        <div class="red-string" style="width: 220px; top: 80px; left: 50px; transform: rotate(50deg);"></div>
+                        <div class="red-string" style="width: 200px; top: 250px; left: 180px; transform: rotate(-35deg);"></div>
+                        <div class="red-string" style="width: 280px; top: 160px; left: 200px; transform: rotate(15deg);"></div>
+                        
+                        <!-- Photos (Dense Cluster) -->
+                        <div class="photo p1" style="top: 40px; left: 40px; width: 80px; transform: rotate(-8deg);"><div class="pin"></div><img src="assets/satoru_gojo.jpg" class="polaroid-img" style="height: 60px;"></div>
+                        <div class="photo p2" style="top: 80px; left: 150px; width: 140px; transform: rotate(2deg); z-index: 5; border: 2px solid var(--neon-pink);"><div class="pin"></div><img src="assets/real_sukuna.jpg.jpeg" class="polaroid-img" style="height: 100px; filter: contrast(1.2);"><small style="color:var(--neon-pink); font-weight:900;">MAIN SUSPECT</small></div>
+                        <div class="photo p3" style="top: 240px; left: 60px; width: 110px; transform: rotate(6deg);"><div class="pin"></div><img src="assets/mikasa_ackerman.jpg" class="polaroid-img" style="height: 90px;"><small>Witness A</small></div>
+                        <div class="photo p1" style="top: 30px; left: 320px; width: 90px; transform: rotate(12deg);"><div class="pin"></div><img src="assets/levi_placeholder_1780469019820.png" class="polaroid-img" style="height: 70px;"></div>
+                        <div class="photo p2" style="top: 200px; left: 300px; width: 130px; transform: rotate(-5deg); z-index: 4;"><div class="pin"></div><img src="assets/itachi_uchiha.jpg" class="polaroid-img" style="height: 100px;"><small>The Mastermind?</small></div>
+                        <div class="photo p3" style="top: 130px; left: 380px; width: 70px; transform: rotate(8deg);"><div class="pin"></div><img src="assets/sasuke_uchiha.jpg" class="polaroid-img" style="height: 50px;"></div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- TROPE HUB SECTION -->
+            <section class="trope-hub-container">
+                <div class="trope-header">
+                    <div>
+                        <h2>TROPE HUB</h2>
+                        <p>Explore popular anime tropes</p>
+                    </div>
+                    <a href="#">See All Tropes ></a>
+                </div>
+                <div class="trope-cards">
+                    <div class="t-card">
+                        <div class="t-icon"><img src="assets/sasuke_uchiha.jpg"></div>
+                        <h4>Tsundere</h4>
+                        <small><span>🔥</span> 1.2M</small>
+                    </div>
+                    <div class="t-card">
+                        <div class="t-icon"><img src="assets/avatar_killua.png" style="background:#f0f0f0;"></div>
+                        <h4>Slice of Life</h4>
+                        <small><span>🔥</span> 5.7K</small>
+                    </div>
+                    <div class="t-card">
+                        <div class="t-icon"><img src="assets/itachi_uchiha.jpg"></div>
+                        <h4>World-Ending Threat</h4>
+                        <small><span>🔥</span> 12.8K</small>
+                    </div>
+                    <div class="t-card">
+                        <div class="t-icon"><img src="assets/real_sukuna.jpg.jpeg"></div>
+                        <h4>Dark Fantasy</h4>
+                        <small><span>🔥</span> 102K</small>
+                    </div>
+                    <div class="t-card active-trope">
+                        <div class="t-icon"><img src="assets/satoru_gojo.jpg"></div>
+                        <h4>Reincarnation</h4>
+                        <small><span>🔥</span> 750K</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ensemble Cast Section -->
+            <div class="section-header center-txt" style="margin-top: 60px;">
+                <h2 style="font-family: 'Outfit'; font-size: 3rem; font-weight: 900; color: white; text-shadow: 0 0 20px var(--neon-cyan);">FEATURED ROSTER</h2>
+                <p style="color: var(--neon-pink); letter-spacing: 2px;">TOP TIER CHARACTERS</p>
+            </div>
+
+            <section class="roster-grid">
+                <div class="roster-card" style="background: #FF2A2A;">
+                    <img src="assets/avatar_luffy.png">
+                    <div class="roster-name-vert">モンキー・D・ルフィ</div>
+                    <div class="roster-name-horiz">MONKEY D. LUFFY</div>
+                </div>
+                <div class="roster-card" style="background: #FF9E2A;">
+                    <img src="assets/avatar_goku.png">
+                    <div class="roster-name-vert">孫悟空</div>
+                    <div class="roster-name-horiz">SON GOKU</div>
+                </div>
+                <div class="roster-card" style="background: #2AA2FF;">
+                    <img src="assets/satoru_gojo.jpg">
+                    <div class="roster-name-vert">五条 悟</div>
+                    <div class="roster-name-horiz">SATORU GOJO</div>
+                </div>
+                <div class="roster-card" style="background: #2AFF73;">
+                    <img src="assets/roronoa_zoro.jpg">
+                    <div class="roster-name-vert">ロロノア・ゾロ</div>
+                    <div class="roster-name-horiz">RORONOA ZORO</div>
+                </div>
+                <div class="roster-card" style="background: #9D2AFF;">
+                    <img src="assets/avatar_killua.png">
+                    <div class="roster-name-vert">キルア</div>
+                    <div class="roster-name-horiz">KILLUA ZOLDYCK</div>
+                </div>
+                <div class="roster-card" style="background: #FF2A81;">
+                    <img src="assets/real_sukuna.jpg.jpeg">
+                    <div class="roster-name-vert">両面宿儺</div>
+                    <div class="roster-name-horiz">RYOMEN SUKUNA</div>
+                </div>
+                <div class="roster-card" style="background: #FFDE2A;">
+                    <img src="assets/levi_ackerman.jpg">
+                    <div class="roster-name-vert">リヴァイ</div>
+                    <div class="roster-name-horiz">LEVI ACKERMAN</div>
+                </div>
+                <div class="roster-card" style="background: #2AFFA8;">
+                    <img src="assets/sasuke_uchiha.jpg">
+                    <div class="roster-name-vert">うちはサスケ</div>
+                    <div class="roster-name-horiz">SASUKE UCHIHA</div>
+                </div>
+            </section>
+
+            <div class="section-header center-txt" style="margin-top: 60px;">
+                <h2 style="font-family: 'Outfit'; font-size: 3rem; font-weight: 900; color: white; text-shadow: 0 0 20px var(--neon-pink);">THE VAULT</h2>
+                <p style="color: var(--neon-cyan); letter-spacing: 2px;">TRENDING AMVs & EDITS</p>
+            </div>
+
+            <section class="vault-showcase">
+                <div class="amv-card">
+                    <img src="assets/thumb_1.png" class="amv-bg">
+                    <div class="amv-content">
+                        <div class="amv-play">▶</div>
+                        <h3 class="amv-title text-red">UNHOLY</h3>
+                    </div>
+                </div>
+                <div class="amv-card">
+                    <img src="assets/thumb_2.png" class="amv-bg">
+                    <div class="amv-content">
+                        <div class="amv-play">▶</div>
+                        <h3 class="amv-title text-pink">YANDERE ANTHEM</h3>
+                    </div>
+                </div>
+                <div class="amv-card">
+                    <img src="assets/thumb_3.png" class="amv-bg">
+                    <div class="amv-content">
+                        <div class="amv-play">▶</div>
+                        <h3 class="amv-title text-cyan">ALL ALONE</h3>
+                    </div>
+                </div>
+                <div class="amv-card">
+                    <img src="assets/thumb_4.png" class="amv-bg">
+                    <div class="amv-content">
+                        <div class="amv-play">▶</div>
+                        <h3 class="amv-title text-purple">SEARCHING FOR HOPE</h3>
+                    </div>
+                </div>
+                <div class="amv-card">
+                    <img src="assets/thumb_5.png" class="amv-bg">
+                    <div class="amv-content">
+                        <div class="amv-play">▶</div>
+                        <h3 class="amv-title text-gradient">MAGICAL SOUL</h3>
+                    </div>
+                </div>
+                <div class="amv-card">
+                    <img src="assets/thumb_6.png" class="amv-bg">
+                    <div class="amv-content">
+                        <div class="amv-play">▶</div>
+                        <h3 class="amv-title text-blue">OVERDRIVE</h3>
+                    </div>
+                </div>
+                <div class="amv-card">
+                    <img src="assets/thumb_7.png" class="amv-bg">
+                    <div class="amv-content">
+                        <div class="amv-play">▶</div>
+                        <h3 class="amv-title text-red">BLOOD MOON</h3>
+                    </div>
+                </div>
+                <div class="amv-card">
+                    <img src="assets/thumb_8.png" class="amv-bg">
+                    <div class="amv-content">
+                        <div class="amv-play">▶</div>
+                        <h3 class="amv-title text-cyan">LIMIT BREAKER</h3>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <!-- Global Footer (Glass) -->
+        <footer class="glass-footer">
+            <div class="footer-logo">✦ AniVerse<br><small>Your anime world. Your people. Your universe.</small></div>
+            <div class="footer-links">
+                <div class="col">
+                    <b>Explore</b>
+                    <a href="#">Trending</a>
+                    <a href="#">Top Anime</a>
+                    <a href="#">Top Characters</a>
+                </div>
+                <div class="col">
+                    <b>Community</b>
+                    <a href="#">Forums</a>
+                    <a href="#">Groups</a>
+                    <a href="#">Fan Creations</a>
+                </div>
+                <div class="col">
+                    <b>Resources</b>
+                    <a href="#">Help Center</a>
+                    <a href="#">Guidelines</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <b>Stay Connected</b>
+                <div class="social-icons">
+                    <span>Discord</span> <span>Twitter</span> <span>Insta</span>
+                </div>
+                <img src="assets/satoru_gojo.jpg" alt="Mascot" class="footer-avatar">
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
